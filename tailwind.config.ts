@@ -22,6 +22,7 @@ const config: Config = {
         "secondary-gray": "#E5E7EB",
         "tertiary-gray": "#374151",
         "ascent-gray": "#1F2937",
+        "gray-active": "#1F2937",
       },
       colors: {
         "primary-white": "#F9FAFB",
