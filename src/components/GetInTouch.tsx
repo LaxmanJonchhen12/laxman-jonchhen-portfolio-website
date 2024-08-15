@@ -4,6 +4,7 @@ import { inter } from "@/app/ui/fonts";
 import Image from "next/image";
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
+import SectionIntro from "./SectionIntro";
 function GetInTouch() {
   const themeContext = useContext(ThemeContext);
 
@@ -12,13 +13,12 @@ function GetInTouch() {
   }
 
   const { theme, toggleTheme } = themeContext;
-  console.log(theme);
 
   return (
     <div className=' bg-primary-white dark:bg-secondary-black flex flex-col items-center justify-center py-16 md:py-24 px-4'>
-      <div className={` bg-secondary-gray dark:bg-tertiary-gray text-tertiary-gray dark:text-primary-gray text-sm font-medium ${inter.className} py-1 px-5 rounded-xl `}>
-        Get in touch
-      </div>
+      <SectionIntro
+        introTitle={"Get in Touch"}
+       />
       <p
       className={` text-tertiary-gray dark:text-primary-gray text-xl font-normal ${inter.className} mt-4 max-w-[343px] md:max-w-[576px] text-center  `}
       >
@@ -197,31 +197,13 @@ function GetInTouch() {
       <p className={` text-base font-normal text-tertiary-gray dark:text-primary-gray mt-6 md:mt-12 `}>
         You may also find me on these platforms!
       </p>
-      <div className="mt-2">
-        <div className="bg-white h-[10] w-[10] hover:bg-gray-active">
+      {/* hover effect on icons left */}
         {
           theme === "dark" && (
             <a 
             href="https://github.com/LaxmanJonchhen12" 
             target="_blank"
-            className="hover:bg-gray-active"
-            >
-              <Image
-              src="/images/getintouch/github-dark.svg"
-              alt="github icon"
-              width={36}
-              height={36}
-              />
-           </a>
-          )
-        }
-        </div>
-        {
-          theme === "dark" && (
-            <a 
-            href="https://github.com/LaxmanJonchhen12" 
-            target="_blank"
-            className="hover:bg-gray-active"
+            className="hover:bg-gray-active mt-2"
             >
               <Image
               src="/images/getintouch/github-dark.svg"
@@ -245,8 +227,6 @@ function GetInTouch() {
           )
          }
       </div>
-
-    </div>
   )
 }
 
