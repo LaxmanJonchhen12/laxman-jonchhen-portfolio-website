@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import GetInTouch from "@/components/GetInTouch";
-import Footer from "@/components/Footer";
-import Testimonials from "@/components/Testimonials";
-import Work from "@/components/Work";
+import GetInTouch from "@/components/section/GetInTouch";
+import Footer from "@/components/layout/Footer";
+import Testimonials from "@/components/section/Testimonials";
+import Work from "@/components/section/Work";
+import Skills from "@/components/section/Skills";
 export default function Home() {
   return (
       <div>
         <Navbar />
+        <Skills />
         <Work />
         <Testimonials />
         <GetInTouch />

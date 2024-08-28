@@ -1,6 +1,6 @@
 
 "use client"
-import SectionIntro from "./SectionIntro";
+import SectionIntro from "../SectionIntro";
 import Image from "next/image";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/ThemeContext";

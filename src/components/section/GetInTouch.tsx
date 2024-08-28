@@ -3,8 +3,8 @@
 import { inter } from "@/app/ui/fonts";
 import Image from "next/image";
 import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-import SectionIntro from "./SectionIntro";
+import { ThemeContext } from "../../context/ThemeContext"
+import SectionIntro from "../SectionIntro";
 function GetInTouch() {
   const themeContext = useContext(ThemeContext);
 

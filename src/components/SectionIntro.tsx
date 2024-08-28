@@ -15,7 +15,6 @@ function SectionIntro({ introTitle }:SectionIntroProps ) {
     }
   
     const { theme, toggleTheme } = themeContext;
-    console.log(theme);
   return (
     <div className={` bg-secondary-gray dark:bg-tertiary-gray text-tertiary-gray dark:text-primary-gray text-sm font-medium ${inter.className} py-1 px-5 rounded-xl `}>
     {introTitle}
