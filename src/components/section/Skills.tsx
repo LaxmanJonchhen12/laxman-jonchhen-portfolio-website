@@ -73,14 +73,14 @@ function Skills() {
 
   const { theme, toggleTheme } = themeContext;
   return (
-    <section className=' bg-primary-white dark:bg-secondary-black px-20 py-24'>
+    <section className=' bg-primary-white dark:bg-secondary-black px-4 py-16 md:px-20 md:py-24'>
         <div className='flex flex-col items-center justify-center gap-y-4'>
             <SectionIntro introTitle='Skills' />
-            <p className='text-xl font-normal text-tertiary-gray dark:text-primary-gray'>
+            <p className=' text-lg md:text-xl text-center font-normal text-tertiary-gray dark:text-primary-gray'>
             The skills, tools and technologies I am really good at:
             </p>
         </div>
-        <div className='grid grid-cols-3 md:mt-12 gap-y-4 md:grid-cols-6 lg:grid-cols-7 md:gap-y-8 lg:gap-y-12'>
+        <div className='grid grid-cols-3 mt-6 md:mt-12 gap-y-4 md:grid-cols-6 lg:grid-cols-7 md:gap-y-8 lg:gap-y-12'>
           {
             technologyData.map((technologies) => (
               <div
@@ -110,7 +110,7 @@ function Skills() {
                     /> 
                   }
                 </a>
-                <p className=' text-tertiary-gray dark:text-primary-gray text-lg font-normal'>
+                <p className=' text-tertiary-gray dark:text-primary-gray text-base md:text-lg font-normal'>
                   {technologies.name}
                 </p>
               </div>
