@@ -42,34 +42,36 @@ const experienceData = [
 
 function ExperienceCard() {
     return(
-      <div className='flex flex-col items-start justify-start gap-y-6 mt-6'>
+      <div className='flex flex-col items-start justify-start gap-y-6 mt-6 md:mx-[192px]'>
           {
             experienceData.map((experience) => (
               <div 
               key={experience.id}
               className='dark:bg-ascent-gray dark:shadow-2xl shadow-md bg-white rounded-xl p-8 flex flex-col md:flex-row items-start justify-start gap-y-4'
               >
-                <h2 className='dark:text-white text-black'>
+                <h2 className='dark:text-white text-black max-md:order-1 md:w-1/4'>
                   {experience.organizationName}
                 </h2>
-                <p className='text-base dark:text-secondary-gray font-normal'>
+                <div className='flex flex-col items-start justify-start max-md:order-3 md:w-2/4'>
+                    <p className='text-lg font-semibold dark:text-primary-gray '>
+                      {experience.jobRole}
+                    </p>
+                    <ul className='list-disc'>
+                      {
+                        experience.jobTask.map((task) => (
+                          <li 
+                          key={task}
+                          className='dark:text-primary-gray text-base font-normal gap-2'
+                          >
+                            {task}
+                          </li>
+                        ))
+                      }
+                    </ul>
+                </div>
+                <p className='text-base dark:text-secondary-gray font-normal max-md:order-2 md:w-1/4'>
                   {experience.jobDate}
                 </p>
-                <p className='text-lg font-semibold dark:text-primary-gray '>
-                  {experience.jobRole}
-                </p>
-                <ul className='list-disc'>
-                  {
-                    experience.jobTask.map((task) => (
-                      <li 
-                      key={task}
-                      className='dark:text-primary-gray text-base font-normal gap-2'
-                      >
-                        {task}
-                      </li>
-                    ))
-                  }
-                </ul>
               </div>
             ))
           }
@@ -79,7 +81,7 @@ function ExperienceCard() {
 
 function Experience() {
   return (
-    <section className='flex flex-col items-center justify-center px-4 py-16 md:py-20  md:px-20 dark:bg-primary-black bg-primary-gray'>
+    <section className='flex flex-col items-center justify-center px-4 py-16 md:py-20  dark:bg-primary-black bg-primary-gray'>
         <SectionIntro introTitle='Experience' />
         <p
       className="dark:text-primary-gray text-center md:text-left text-tertiary-gray text-lg font-normal pt-4"

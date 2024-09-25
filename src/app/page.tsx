@@ -6,10 +6,12 @@ import Testimonials from "@/components/section/Testimonials";
 import Work from "@/components/section/Work";
 import Skills from "@/components/section/Skills";
 import Experience from "@/components/section/Experience";
+import AboutMe from "@/components/section/AboutMe";
 export default function Home() {
   return (
       <div>
         <Navbar />
+        <AboutMe />
         <Skills />
         <Experience />
         <Work />
