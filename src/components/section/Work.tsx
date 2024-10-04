@@ -15,7 +15,7 @@ const projectData = [
         liveLink:"https://gyansar.netlify.app/",
     },
     {
-        id:1,
+        id:2,
         projectImage:"/images/works/mining-infosys.png",
         projectName: "Mining Infosys",
         projectDescription: "Website created for mining infosys during tenure at mining infoys as frontend developer. Revamped the site",
@@ -24,7 +24,7 @@ const projectData = [
         liveLink:"https://mininginfosys.com/",
     },
     {
-        id:1,
+        id:3,
         projectImage:"/images/works/ramesh-kharbuja.png",
         projectName: "Ramesh Kharbuja Portfolio Site",
         projectDescription: "Portfolio site Created for Ramesh Kharbuja",
@@ -43,7 +43,9 @@ export function ProjectCard() {
   
     const { theme, toggleTheme } = themeContext;
     return(
-        <div className="flex flex-col items-start justify-start gap-y-6 gap-x-0 mt-6 md:gap-y-12 md:gap-x-none md:mt-12">
+        <section
+        id="work" 
+        className="flex flex-col items-start justify-start gap-y-6 gap-x-0 mt-6 md:gap-y-12 md:gap-x-none md:mt-12">
             {/* my works improvements left */}
             {
                 projectData.map((projectData) => (
@@ -140,7 +142,7 @@ export function ProjectCard() {
                 ))
             }
 
-        </div>
+        </section>
     )
 }
 function Work() {

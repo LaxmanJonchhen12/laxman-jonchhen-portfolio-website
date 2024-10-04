@@ -1,7 +1,9 @@
 import SectionIntro from "../SectionIntro"
 function Testimonials() {
   return (
-    <div className="flex flex-col items-center justify-start dark:bg-primary-black bg-primary-gray py-16 px-4 md:px-24 md:py-20 ">
+    <section 
+    id="testimonials"
+    className="flex flex-col items-center justify-start dark:bg-primary-black bg-primary-gray py-16 px-4 md:px-24 md:py-20 ">
       <SectionIntro introTitle="Testimonials" />
       <p
       className="dark:text-primary-gray text-tertiary-gray text-lg font-normal pt-4"
@@ -80,7 +82,7 @@ function Testimonials() {
             </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

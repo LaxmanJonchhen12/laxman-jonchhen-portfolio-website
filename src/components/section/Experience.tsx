@@ -27,7 +27,7 @@ const experienceData = [
     jobDate: "Mar 2023 - Jun 2023",
   },
   {
-    id:1,
+    id:3,
     organizationName:"Mining Infosys",
     organizationImage:"",
     jobRole: "Junior Frontend Developer",

@@ -15,7 +15,9 @@ function GetInTouch() {
   const { theme, toggleTheme } = themeContext;
 
   return (
-    <div className=' bg-primary-white dark:bg-secondary-black flex flex-col items-center justify-center py-16 md:py-24 px-4'>
+    <section 
+    id="contact"
+    className=' bg-primary-white dark:bg-secondary-black flex flex-col items-center justify-center py-16 md:py-24 px-4'>
       <SectionIntro
         introTitle={"Get in Touch"}
        />
@@ -226,7 +228,7 @@ function GetInTouch() {
              </a>
           )
          }
-      </div>
+      </section>
   )
 }
 
