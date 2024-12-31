@@ -8,10 +8,12 @@ import Skills from "@/components/section/Skills";
 import Experience from "@/components/section/Experience";
 import AboutMe from "@/components/section/AboutMe";
 import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/section/Hero";
 export default function Home() {
   return (
       <div>
         <Navbar />
+        <Hero />
         <AboutMe />
         <Skills />
         <Experience />
