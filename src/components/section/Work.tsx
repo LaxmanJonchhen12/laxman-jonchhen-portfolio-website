@@ -53,7 +53,7 @@ export function ProjectCard() {
                     key={projectData.id}
                     className="flex flex-col md:flex-row items-center justify-center"
                     >
-                        <div className="dark:bg-tertiary-gray bg-primary-gray p-6 md:p-8 rounded-t-xl rounded-l-none md:rounded-t-none md:rounded-l-xl">
+                        <div className="dark:bg-tertiary-gray bg-primary-gray p-6 md:p-8 rounded-t-xl rounded-l-none md:rounded-t-none md:rounded-l-xl md:max-h-[272px]">
                             <Image
                             src={projectData.projectImage}
                             alt={projectData.projectName}
